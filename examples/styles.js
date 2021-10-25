@@ -41,7 +41,7 @@ h2 {
   padding: .5rem;
 }
 
-.navbar .nav-link {
+.navbar .nav-link { 
   padding: .5rem;
 }
 

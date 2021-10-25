@@ -17,7 +17,7 @@ export class Stacked extends PureComponent {
             className="container"
             style={{ background: containerBg(i) }}
           >
-            <Sticky>
+            <Sticky topOffset={i * 50}>
               {({ style }) => (
                 <Header style={{ ...style, background: headerBg(i) }} />
               )}
