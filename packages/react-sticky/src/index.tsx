@@ -1,4 +1,4 @@
-import Sticky from "./Sticky";
+import Sticky from "./sticky";
 import Container from "./Container";
 
 export { Sticky };

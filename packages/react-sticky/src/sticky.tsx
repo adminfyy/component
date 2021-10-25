@@ -9,7 +9,7 @@ import { IStickyProps } from "./interface";
 import { StickContext } from "./context";
 import { useSticky } from "./hooks";
 
-function Sticky(props: IStickyProps) {
+export default function Sticky(props: IStickyProps) {
   const {
     relative = false,
     topOffset = 0,
@@ -117,4 +117,3 @@ function Sticky(props: IStickyProps) {
     </div>
   );
 }
-export default Sticky;
