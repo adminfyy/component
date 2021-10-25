@@ -175,7 +175,7 @@ sticky 钩子函数，用于监听最近的一个 StickContainer 的事件，回
 ### Demo
 
 ```typescript
-const VolunteerNav: React.FC = () => {
+const MyComponent: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   const handleContainerEvent = useCallback(
@@ -192,13 +192,7 @@ const VolunteerNav: React.FC = () => {
     () => mergeStr({ "my-department__nav": true, "is-sticky": isSticky }),
     [isSticky]
   );
-  return (
-    <div className={classname}>
-      <Nav border={false} goBack={webviewGoBack}>
-        {text}
-      </Nav>
-    </div>
-  );
+  return <div className={classname}>{text}</div>;
 };
 ```
 
