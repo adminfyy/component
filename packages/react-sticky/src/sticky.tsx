@@ -111,8 +111,8 @@ export default function Sticky(props: IStickyProps) {
 
   const Child = useMemo(() => React.forwardRef(children), [children]);
   return (
-    <div className="my-sticky">
-      <div ref={placeholder} className="my-sticky-placeholder" style={style} />
+    <div className="r-sticky">
+      <div ref={placeholder} className="r-sticky-placeholder" style={style} />
       <Child {...state} ref={content} />
     </div>
   );
