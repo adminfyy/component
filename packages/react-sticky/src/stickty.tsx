@@ -9,7 +9,7 @@ import { IStickyProps } from "./interface";
 import { StickContext } from "./context";
 import { useSticky } from "./hooks";
 
-const Sticky: React.FC<IStickyProps> = (props) => {
+function Sticky(props: IStickyProps) {
   const {
     relative = false,
     topOffset = 0,
@@ -116,5 +116,5 @@ const Sticky: React.FC<IStickyProps> = (props) => {
       <Child {...state} ref={content} />
     </div>
   );
-};
+}
 export default Sticky;
