@@ -1,6 +1,6 @@
 {
   "name": "r-sticky",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -9,7 +9,7 @@
   "sideEffects": false,
   "authors": {
     "name": "louisf",
-    "email": "287732502@qq.com.com"
+    "email": "287732502@qq.com"
   },
   "files": [
     "dist",
@@ -24,5 +24,8 @@
   "devDependencies": {
     "react": "^16.8.6 || ^17.0"
   },
-  "gitHead": "4ad48b35ca7e408054487f0c07601d6c12ef9e39"
+  "gitHead": "16644b47ef288a127013ff62e69d8d7b9b119962",
+  "description": "make component sticky",
+  "author": "louisf",
+  "private": false
 }
