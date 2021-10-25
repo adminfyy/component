@@ -1,8 +1,16 @@
 {
   "name": "r-sticky",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "unpkg": "dist/ahooks.js",
+  "sideEffects": false,
+  "authors": {
+    "name": "louisf",
+    "email": "287732502@qq.com.com"
+  },
   "scripts": {
     "build": "gulp && webpack-cli"
   },
