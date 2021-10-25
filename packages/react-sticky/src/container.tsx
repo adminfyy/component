@@ -107,3 +107,5 @@ export const StickyContainer = forwardRef<
 });
 
 StickyContainer.displayName = "StickyContainer";
+
+export default StickyContainer;

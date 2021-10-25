@@ -1,9 +1,12 @@
 {
-  "name": "react-sticky",
+  "name": "r-sticky",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "gulp && webpack-cli"
+  },
+  "devDependencies": {
+    "react": "^16.8.6 || ^17.0"
   }
 }
