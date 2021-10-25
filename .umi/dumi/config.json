@@ -1,0 +1,29 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/",
+          "title": "Sticky",
+          "meta": {
+            "order": null
+          }
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "sticky-hook",
+  "mode": "doc",
+  "repository": {
+    "url": "https://github.com/adminfyy/react-stikcy",
+    "branch": "master"
+  },
+  "theme": {}
+}

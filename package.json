@@ -1,58 +1,74 @@
 {
-  "name": "react-sticky",
-  "version": "6.0.3",
-  "description": "Sticky component for React",
-  "main": "lib/index.js",
-  "scripts": {
-    "clean": "rimraf lib",
-    "compile": "babel src --loose --out-dir lib",
-    "demos:start": "webpack-dev-server --watch",
-    "demos:build": "NODE_ENV=production webpack",
-    "prepublish": "npm run prepare",
-    "prepare": "npm run clean && npm run compile",
-    "test": "mocha test/setup.js test/spec/*.js"
-  },
+  "name": "sticky-hook",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/captivationsoftware/react-sticky"
+    "url": "git+https://github.com/adminfyy/react-stikcy.git"
   },
-  "keywords": [
-    "react-component",
-    "React",
-    "Sticky"
-  ],
-  "author": "Captivation Software",
-  "license": "MIT",
-  "homepage": "https://github.com/captivationsoftware/react-sticky",
-  "dependencies": {
-    "@babel/runtime": "^7.3.1",
-    "prop-types": "^15.5.8",
-    "raf": "^3.3.0"
+  "scripts": {
+    "init": "rm -rf node_modules && yarn install && yarn run clean && yarn run bootstrap && yarn run build",
+    "start": "yarn run dev",
+    "dev": "dumi dev",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "build": "lerna run build",
+    "test": "jest",
+    "lint": "eslint --ignore-pattern **/__tests__/* --ignore-pattern **/demo/* \"packages/*/src/**/*.{ts,tsx}\"",
+    "build:doc": "dumi build",
+    "pub:doc": "surge ./dist --domain ahooks.js.org",
+    "pub:doc-gitee": "cd ./dist && rm -rf .git && touch .spa && touch .nojekyll && git init && git remote add origin git@gitee.com:ahooks/ahooks.git && git add -A && git commit -m \"publish docs\" && git push origin master -f",
+    "pub": "lerna publish"
   },
-  "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "chai": "^4",
-    "enzyme": "^2.8.2",
-    "jsdom": "8.0.4",
-    "mocha": "^5",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.2.2",
-    "react-test-renderer": "^15.5.4",
-    "rimraf": "^2.5.2",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/react-hooks": "^2.0.1",
+    "@types/jest": "^24.9.1",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/lodash.throttle": "^4.1.6",
+    "@umijs/fabric": "^2.1.0",
+    "@umijs/plugin-sass": "^1.1.1",
+    "antd": "^4.3.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "del": "^5.1.0",
+    "dumi": "^1.1.7",
+    "enzyme": "^3.10.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
+    "lerna": "^4.0.0",
+    "mockdate": "^3.0.2",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-drag-listview": "^0.1.6",
+    "react-test-renderer": "^16.13.1",
+    "surge": "^0.21.3",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.3.3",
+    "umi-plugin-hire": "^1.0.6",
+    "umi-request": "^1.2.18",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }
