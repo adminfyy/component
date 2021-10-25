@@ -8,5 +8,6 @@
   },
   "devDependencies": {
     "react": "^16.8.6 || ^17.0"
-  }
+  },
+  "gitHead": "4ad48b35ca7e408054487f0c07601d6c12ef9e39"
 }
