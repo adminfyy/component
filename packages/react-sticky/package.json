@@ -11,6 +11,13 @@
     "name": "louisf",
     "email": "287732502@qq.com.com"
   },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "gulp && webpack-cli"
   },
