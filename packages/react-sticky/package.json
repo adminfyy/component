@@ -24,6 +24,9 @@
   "devDependencies": {
     "react": "^16.8.6 || ^17.0"
   },
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0"
+  },
   "gitHead": "16644b47ef288a127013ff62e69d8d7b9b119962",
   "description": "make component sticky",
   "author": "louisf",
