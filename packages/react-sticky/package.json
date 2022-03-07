@@ -1,6 +1,6 @@
 {
   "name": "r-sticky",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -27,6 +27,11 @@
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0"
   },
+  "keywords": [
+    "sticky",
+    "react",
+    "粘性"
+  ],
   "gitHead": "16644b47ef288a127013ff62e69d8d7b9b119962",
   "description": "make component sticky",
   "author": "louisf",

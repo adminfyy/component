@@ -1,4 +1,4 @@
-# Sticky
+# Sticky 粘在屏幕上
 
 让你的组件具有粘性
 
@@ -185,3 +185,7 @@ const MyComponent: React.FC = () => {
   return <div className={classname}>{text}</div>;
 };
 ```
+
+# 提示
+
+transplanted from [react-sticky](https://www.npmjs.com/package/react-sticky)
